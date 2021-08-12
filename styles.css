@@ -1,0 +1,143 @@
+body {
+    background-color: whitesmoke;
+}
+
+.gallery {
+    width: 350px;
+    height: auto;
+    object-fit: cover;
+}
+
+header {
+    /* background-color: #45a29e; */
+    background-image: url(./images/131810-turquoise-and-white-low-poly-background-template-vector-graphic.jpg);
+    background-size: cover;
+    height: 200px;
+    margin-top: 0;
+}
+
+header h1 {
+    font-weight: 400;
+    font-size: 3rem;
+    color: #0b0c10;
+    padding-top: 18px;
+    font-family: 'Playfair Display', serif;
+}
+
+header h4 {
+    font-size: 1.75rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.back-color {
+    background-color: #45a29e;
+}
+
+.jumbotron {
+    padding: 0;
+}
+
+header p {
+    padding-top: 20px;
+    font-family: 'Vollkorn', serif;
+    font-size: larger;
+    width: 60%;
+}
+
+span {
+    font-family: 'Playfair Display', serif;
+    font-size: larger;
+    color: #1f2833;
+}
+
+
+.headshot {
+    width: 300px;
+    margin: 20px 0 40px 0;
+}
+
+.vollkorn {
+    font-family: 'Vollkorn', serif;
+}
+
+.squat {
+    width: 70%;
+}
+
+.linked-item {
+    border: 3px solid #66fcf1;
+    padding: 5px 0 5px 0;
+    text-align: center;
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 25%;
+    color: #0b0c10;
+    font-family: 'Vollkorn', serif;
+    font-size: larger;
+    border-radius: 15%;
+}
+
+.page-link {
+    color: #0b0c10;
+    background-color: #66fcf1;
+    border: 0;
+}
+
+.page-link:hover {
+    background-color: #1f2833;
+    color:#66fcf1;
+}
+
+.center {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+/* Specific to gallery.html */
+
+
+
+/* Specific to contact.html */
+
+label {
+    display: inline-block;
+}
+
+form 
+{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Vollkorn', serif;
+    margin-bottom: 80px;
+}
+
+#output-form {
+    margin-top: 80px;
+}
+
+.output-wrap div {
+    margin: 2px 0 5px 0;
+}
+
+.output-wrap p {
+    margin: 20px 0 0 0;
+}
+/* This is to fix header overflow */
+
+@media (max-width:813px) {
+    header h1, header h4 {
+        font-size: 5vw;
+    }
+
+    #aboutme #gallery-header {
+        font-size: 10vw;
+    }
+
+}

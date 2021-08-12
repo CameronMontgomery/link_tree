@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - Cameron Montgomery</title>
+    <!-- Bootstrap CSS, Jquery and JS -->
+    <link rel="stylesheet" href="./bootstrap_files/bootstrap.4.3.min.css">
+    <link rel="stylesheet" href="./bootstrap_files/bootstrap.4.3.min.js">
+    <link rel="stylesheet" href="./bootstrap_files/bootstrap.jquery.3.3.min.js">
+    <link rel="stylesheet" href="./bootstrap_files/bootstrap.popper.min.js">
+    <!-- Personal CSS Stylesheet -->
+    <link rel="stylesheet" href="./styles.css">
+    <!-- Google font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Vollkorn&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="center">
+        <h1>Drop Me a Line</h1>
+        <p class="center">I would love to hear from you! Please provide your information and message, I will get back to you soon!</p>
+    </header>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Contact</li>
+        </ol>
+    </nav>
+    <main class="vollkorn container row">
+        <ul class="nav flex-column col-sm-12 col-md-1">
+            <li class="nav-item">
+                <a class="nav-link" href="./cover.html">Cover</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link active" href="./resume.html">Resume</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+        </ul>
+        <div class="col-sm-12 col-md-11">
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputFirstName">First Name</label>
+                        <input type="text" class="form-control" id="inputFirstName" placeholder="First Name">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputLastName">Last Name</label>
+                        <input type="text" class="form-control" id="inputLastName" placeholder="Last Name">
+                    </div>
+                    <div class="form-group col-9">
+                        <label for="inputEmail">Email</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                    </div>
+                    <div class="form-group col-3">
+                        <label for="inputAge">Age</label>
+                        <input type="text" class="form-control" id="inputAge" placeholder="Age">
+                    </div>
+                    <div class="form-group col-12">
+                        <label for="inputSecret">Secret Answer</label>
+                        <input type="password" class="form-control" id="inputSecret" placeholder="Secret Answer">
+                    </div>
+                    <div class="form-group col-12">
+                        <label for="inputMessage">Message</label>
+                        <textarea id="inputMessage" class="form-control" placeholder="Type Your Message Here" style="height:150px"></textarea>
+                    </div>
+                    <fieldset class="form-group center">
+                        <div class="row center">
+                            <legend class="col-form-label col-sm-12 col-md-3 col-lg-3 pt-0">Preferred Contact Method</legend>
+                            <div class="col-sm-12 col-md-3 col-lg-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="prefercontact" id="preferEmail" value="preferEmail">
+                                    <label class="form-check-label" for="preferEmail">
+                                        Email
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="prefercontact" id="preferPhone" value="preferPhone">
+                                    <label class="form-check-label" for="preferPhone">
+                                        Phone
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="prefercontact" id="noContact" value="noContact">
+                                    <label class="form-check-label" for="noContact">
+                                        No Contact
+                                    </label>
+                                </div>
+                            </div>
+                            <select class="custom-select col-sm-12 col-md-6 col-lg-6" id="income">
+                                <option selected>Please Provide your Annual Income</option>
+                                <option value="Less than 50,000">Less than $50,000</option>
+                                <option value="51,000-80,000">$51,000 - $80,000</option>
+                                <option value="81,000-120,000">$81,000 - $120,000</option>
+                                <option value="121,000 and Above">$121,000 and Above</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    <div class="row center">
+                        <div class="form-group col-6">
+                            <label class="form-check-label" for="infoCorrect">Info Correct?</label>
+                            <input type="checkbox" class="form-check-input" id="infoCorrect">
+                        </div>
+                        <button id="submit" class="btn btn-primary col-6" type="submit">Submit form</button>
+                    </div>
+                </div>
+            </form>
+            <div class="output-wrap">
+                <div>
+                    <h3>Output Data</h3>
+                </div>
+                <div>
+                    <p>First Name</p>
+                    <div id="first-name-output"></div>
+                </div>
+                <div>
+                    <p>Last Name</p>
+                    <div id="last-name-output"></div>
+                </div>
+                <div>
+                    <p>Email</p>
+                    <div id="email-output"></div>
+                </div>
+                <div>
+                    <p>Age</p>
+                    <div id="age-output"></div>
+                </div>
+                <div>
+                    <p>Secret Answer</p>
+                    <div id="secret-output"></div>
+                </div>
+                <div>
+                    <p>Message</p>
+                    <div id="message-output"></div>
+                </div>
+                <div>
+                    <p>Income</p>
+                    <div id="income-output"></div>
+                </div>
+                <div>
+                    <p>Income</p>
+                    <div id="pre-output"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+   <script src="./script.js"></script>
+</body>
+</html>
